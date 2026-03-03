@@ -11,14 +11,14 @@ const ArchiveGallery = () => {
     : galleryImages.filter(img => img.filter === activeFilter);
 
   return (
-    <section className="py-24 border-t border-grid-line bg-background-dark/50" id="archive_gallery" aria-label="AI-Generated Archive Gallery">
+    <section className="py-24 border-t border-grid-line bg-background-dark/50" id="archive_gallery" aria-label="Galería de Archivo Generada por IA">
       <div className="max-w-7xl mx-auto px-6">
         <div className="mb-10 flex flex-wrap items-center gap-0 border border-grid-line bg-surface/50">
           <div className="flex items-center px-4 py-3 border-r border-grid-line bg-primary/5">
             <span className="material-symbols-outlined text-primary text-sm mr-2">filter_list</span>
-            <span className="font-mono text-[10px] text-muted uppercase tracking-widest">Filter_Params:</span>
+            <span className="font-mono text-[10px] text-muted uppercase tracking-widest">Filtro_Params:</span>
           </div>
-          <div className="flex flex-wrap flex-1" role="tablist" aria-label="Filter gallery by AI engine">
+          <div className="flex flex-wrap flex-1" role="tablist" aria-label="Filtrar galería por motor de IA">
             {galleryFilters.map(f => (
               <button
                 key={f}
@@ -64,7 +64,7 @@ const ArchiveGallery = () => {
           </AnimatePresence>
           {filtered.length === 0 && (
             <div className="col-span-full text-center py-16 font-mono text-muted text-sm uppercase tracking-widest">
-              NO_RESULTS // FILTER: {activeFilter}
+              SIN_RESULTADOS // FILTRO: {activeFilter}
             </div>
           )}
         </div>

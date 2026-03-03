@@ -22,45 +22,150 @@ export interface FAQEntry {
 }
 
 export const curriculumModules: CurriculumModule[] = [
-  { num: "01", title: "Ideation & Concepts", desc: "Develop project narratives and mood boards using AI. Learn to translate spatial ideas into structured visual concepts.", tag1: "Creative_Narrative", tag2: "v2.0" },
-  { num: "02", title: "Floor Plans to Photorealism", desc: "Transform basic layouts and sketches into stunning, high-fidelity renders with absolute architectural precision.", tag1: "Rendering_Pipeline", tag2: "v3.1" },
-  { num: "03", title: "Prompting Architecture", desc: "Craft precise prompts to control lighting, materials, and architectural styles using advanced LLM spatial logic.", tag1: "Linguistic_Control", tag2: "v1.5" },
-  { num: "04", title: "Motion & Progress", desc: "Generate complex animations to showcase construction phases or spatial walkthroughs using video generation models.", tag1: "Temporal_Viz", tag2: "v2.2" },
-  { num: "05", title: "Sound & Voice Over", desc: "Add professional narration and atmospheric audio to your project pitches for a complete cinematic experience.", tag1: "Audio_Design", tag2: "v1.1" },
-  { num: "06", title: "Editing & Assembly", desc: "Achieve a professional polish for your final promotional video. Integrate all assets into a pitch-winning showcase.", tag1: "Post_Production", tag2: "v4.0" },
+  {
+    num: "01",
+    title: "Ideación y Conceptos",
+    desc: "Desarrolla narrativas de proyecto y mood boards con IA. Aprende a traducir ideas espaciales en conceptos visuales estructurados.",
+    tag1: "Creative_Narrative",
+    tag2: "v2.0",
+  },
+  {
+    num: "02",
+    title: "De Planos a Fotorrealismo",
+    desc: "Transforma planos básicos y bocetos en renders impresionantes de alta fidelidad con absoluta precisión arquitectónica.",
+    tag1: "Rendering_Pipeline",
+    tag2: "v3.1",
+  },
+  {
+    num: "03",
+    title: "Arquitectura de Prompts",
+    desc: "Crea prompts precisos para controlar iluminación, materiales y estilos arquitectónicos usando lógica espacial avanzada de LLMs.",
+    tag1: "Linguistic_Control",
+    tag2: "v1.5",
+  },
+  {
+    num: "04",
+    title: "Movimiento y Progreso",
+    desc: "Genera animaciones complejas para mostrar fases de construcción o recorridos espaciales usando modelos de generación de video.",
+    tag1: "Temporal_Viz",
+    tag2: "v2.2",
+  },
+  {
+    num: "05",
+    title: "Sonido y Narración",
+    desc: "Añade narración profesional y audio atmosférico a tus presentaciones de proyecto para una experiencia cinematográfica completa.",
+    tag1: "Audio_Design",
+    tag2: "v1.1",
+  },
+  {
+    num: "06",
+    title: "Edición y Ensamblaje",
+    desc: "Logra un acabado profesional para tu video promocional final. Integra todos los recursos en una presentación ganadora.",
+    tag1: "Post_Production",
+    tag2: "v4.0",
+  },
 ];
 
-export const galleryFilters = ["ALL_GENS", "MIDJOURNEY", "KLING_3", "VEO_3", "FLUX.1", "RUNWAY"];
+export const galleryFilters = [
+  "ALL_GENS",
+  "MIDJOURNEY",
+  "KLING_3",
+  "VEO_3",
+  "FLUX.1",
+  "RUNWAY",
+];
 
 export const galleryImages: GalleryImage[] = [
-  { src: "/images/gallery-05.jpg", aspect: "aspect-[4/5]", id: "#8472", engine: "FLUX.1", meta1: "ITER: 150", filter: "FLUX.1", alt: "Luxury modern villa exterior with dramatic lighting and landscaped pool area" },
-  { src: "/images/gallery-06.jpg", aspect: "aspect-[3/4]", id: "#2293", engine: "SAMP_METHOD: EULER_A", meta1: "CFG: 7.5", filter: "MIDJOURNEY", alt: "Warm-toned architectural interior with natural wood and ambient lighting" },
-  { src: "/images/gallery-07.jpg", aspect: "aspect-[1/1]", id: "#9104", engine: "LATENT_SPACE: V4_HQ", meta1: "SEED: 88291", filter: "VEO_3", alt: "Brutalist concrete structure with angular geometry set against a misty forest" },
-  { src: "/images/gallery-04.jpg", aspect: "aspect-[16/9]", id: "#4052", engine: "GEN_ENGINE: FLUX.PRO", meta1: "POS: TOP_VIEW", filter: "FLUX.1", alt: "Aerial view of a contemporary campus with green rooftops and courtyards" },
+  {
+    src: "/images/gallery-05.jpg",
+    aspect: "aspect-[4/5]",
+    id: "#8472",
+    engine: "FLUX.1",
+    meta1: "ITER: 150",
+    filter: "FLUX.1",
+    alt: "Exterior de villa moderna de lujo con iluminación dramática y área de piscina paisajizada",
+  },
+  {
+    src: "/images/gallery-06.jpg",
+    aspect: "aspect-[3/4]",
+    id: "#2293",
+    engine: "SAMP_METHOD: EULER_A",
+    meta1: "CFG: 7.5",
+    filter: "MIDJOURNEY",
+    alt: "Interior arquitectónico en tonos cálidos con madera natural e iluminación ambiental",
+  },
+  {
+    src: "/images/gallery-07.jpg",
+    aspect: "aspect-[1/1]",
+    id: "#9104",
+    engine: "LATENT_SPACE: V4_HQ",
+    meta1: "SEED: 88291",
+    filter: "VEO_3",
+    alt: "Estructura brutalista de concreto con geometría angular en un bosque brumoso",
+  },
+  {
+    src: "/images/gallery-04.jpg",
+    aspect: "aspect-[16/9]",
+    id: "#4052",
+    engine: "GEN_ENGINE: FLUX.PRO",
+    meta1: "POS: TOP_VIEW",
+    filter: "FLUX.1",
+    alt: "Vista aérea de un campus contemporáneo con techos verdes y patios",
+  },
 ];
 
 export const faqs: FAQEntry[] = [
-  { q: "Do I need previous experience?", a: "Not at all. This course is designed for both beginners and seasoned industry professionals. If you're new to audiovisual production, you'll learn the fundamentals step by step. If you already use tools like AutoCAD or SketchUp, you'll discover how to drastically accelerate your workflow." },
-  { q: "Do I need to know how to code?", a: "No coding required. All the tools we'll use are designed for creatives. You'll learn through conversational prompts, user-friendly interfaces, and established workflows." },
-  { q: "How is the course delivered?", a: "The course is 100% online, delivered through 4 live sessions (each 2 hours long). You'll also get access to recorded sessions, downloadable resources, and a private Slack community of AEC professionals." },
-  { q: "What equipment do I need?", a: "A standard laptop with a reliable internet connection is enough, as most of these AI tools are cloud-based. We'll guide you through platforms like Midjourney, Veo 3, and Nano Banana Pro, explaining pricing tiers so you can fit your budget." },
+  {
+    q: "¿Necesito experiencia previa?",
+    a: "Para nada. Este curso está diseñado tanto para principiantes como para profesionales experimentados de la industria. Si eres nuevo en la producción audiovisual, aprenderás los fundamentos paso a paso. Si ya usas herramientas como AutoCAD o SketchUp, descubrirás cómo acelerar drásticamente tu flujo de trabajo.",
+  },
+  {
+    q: "¿Necesito saber programar?",
+    a: "No se requiere programación. Todas las herramientas que usaremos están diseñadas para creativos. Aprenderás a través de prompts conversacionales, interfaces intuitivas y flujos de trabajo establecidos.",
+  },
+  {
+    q: "¿Cómo se imparte el curso?",
+    a: "El curso es 100% en línea, impartido a través de 4 sesiones en vivo (cada una de 2 horas). También tendrás acceso a las sesiones grabadas, recursos descargables y una comunidad privada en Slack de profesionales AEC.",
+  },
+  {
+    q: "¿Qué equipo necesito?",
+    a: "Un portátil estándar con una conexión a internet confiable es suficiente, ya que la mayoría de estas herramientas de IA son basadas en la nube. Te guiaremos a través de plataformas como Midjourney, Veo 3 y Nano Banana Pro, explicando los niveles de precios para que se ajusten a tu presupuesto.",
+  },
 ];
 
-export const techStackItems = ["CHATGPT", "GEMINI", "MIDJOURNEY", "FLUX", "VEO 3", "KLING 3", "SEEEDANCE", "NANO BANANA PRO"];
+export const techStackItems = [
+  "CHATGPT",
+  "GEMINI",
+  "MIDJOURNEY",
+  "FLUX",
+  "VEO 3",
+  "KLING 3",
+  "SEEEDANCE",
+  "NANO BANANA PRO",
+];
 
 // Gallery preview images (used in the GalleryPreview section)
 export const galleryPreviewImages = {
-  master: { src: "/images/gallery-01.jpg", alt: "Modern luxury villa with infinity pool overlooking a mountainous landscape at sunset" },
-  detail: { src: "/images/gallery-02.jpg", alt: "Contemporary residential facade with warm interior lighting and landscaped garden" },
-  alt: { src: "/images/gallery-03.jpg", alt: "Minimalist concrete building with geometric patterns and natural surroundings" },
+  master: {
+    src: "/images/gallery-01.jpg",
+    alt: "Villa moderna de lujo con piscina infinita frente a un paisaje montañoso al atardecer",
+  },
+  detail: {
+    src: "/images/gallery-02.jpg",
+    alt: "Fachada residencial contemporánea con iluminación interior cálida y jardín paisajizado",
+  },
+  alt: {
+    src: "/images/gallery-03.jpg",
+    alt: "Edificio minimalista de concreto con patrones geométricos y entorno natural",
+  },
 };
 
 export const instructorImage = {
   src: "/images/instructor-portrait.jpg",
-  alt: "Braulio Brauhaus, workshop instructor with 20+ years of design and advertising experience",
+  alt: "Braulio Brauhaus, instructor del taller con más de 20 años de experiencia en diseño y publicidad",
 };
 
 export const heroImage = {
   src: "/images/hero-wireframe.jpg",
-  alt: "Technical wireframe of an architectural structure",
+  alt: "Wireframe técnico de una estructura arquitectónica",
 };

@@ -3,10 +3,10 @@ import Crosshairs from './ui/Crosshairs';
 import { curriculumModules } from '../data/content';
 
 const Curriculum = () => (
-  <section className="py-24 max-w-7xl mx-auto px-6" id="curriculum" aria-label="Curriculum Modules">
+  <section className="py-24 max-w-7xl mx-auto px-6" id="curriculum" aria-label="Módulos del Programa">
     <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
       <div className="max-w-2xl">
-        <div className="font-mono text-primary text-xs tracking-[0.2em] mb-4 uppercase">COURSE_TOPICS</div>
+        <div className="font-mono text-primary text-xs tracking-[0.2em] mb-4 uppercase">TEMAS_DEL_CURSO</div>
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -14,16 +14,16 @@ const Curriculum = () => (
           transition={{ duration: 0.5 }}
           className="font-display text-4xl font-bold text-white uppercase tracking-tighter mb-4"
         >
-          01_CURRICULUM_MODULES
+          01_MÓDULOS_DEL_PROGRAMA
         </motion.h2>
         <p className="text-muted text-sm leading-relaxed">
-          The program focuses on Artificial Intelligence, Tools, and the Creative Workflow across 4 two-hour sessions plus individual coaching.
+          El programa se enfoca en Inteligencia Artificial, Herramientas y el Flujo de Trabajo Creativo a través de 4 sesiones de dos horas más coaching individual.
         </p>
       </div>
       <div className="font-mono text-muted text-[10px] uppercase text-left md:text-right leading-tight">
-        TOTAL_HOURS: 08 + 1 COACHING<br />
-        PROJECT: 2MIN_PROMO_VIDEO<br />
-        ACCESS: PRIVATE_COMMUNITY
+        TOTAL_HORAS: 08 + 1 COACHING<br />
+        PROYECTO: VIDEO_PROMO_2MIN<br />
+        ACCESO: COMUNIDAD_PRIVADA
       </div>
     </div>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

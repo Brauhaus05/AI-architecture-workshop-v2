@@ -10,16 +10,16 @@ describe('App', () => {
 
   it('renders all main sections', () => {
     render(<App />);
-    expect(screen.getByText(/REVOLUTIONIZE/)).toBeInTheDocument();
-    expect(screen.getByText(/01_CURRICULUM_MODULES/)).toBeInTheDocument();
+    expect(screen.getByText(/REVOLUCIONA/)).toBeInTheDocument();
+    expect(screen.getByText(/01_MÓDULOS_DEL_PROGRAMA/)).toBeInTheDocument();
     expect(screen.getAllByText(/BRAUHAUS/).length).toBeGreaterThan(0);
-    expect(screen.getByText(/Support_Protocols/)).toBeInTheDocument();
+    expect(screen.getByText(/Protocolos_de_Soporte/)).toBeInTheDocument();
   });
 
   it('renders navigation links', () => {
     render(<App />);
-    expect(screen.getAllByText(/CURRICULUM/i).length).toBeGreaterThan(0);
-    expect(screen.getAllByText(/TECH_STACK/i).length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/PROGRAMA/i).length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/TECNOLOGÍAS/i).length).toBeGreaterThan(0);
     expect(screen.getAllByText(/INSTRUCTOR/i).length).toBeGreaterThan(0);
   });
 });

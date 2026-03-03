@@ -22,23 +22,23 @@ const Header = () => {
             <span className="font-display font-bold text-lg tracking-tight uppercase">A.I. ARCHITECT</span>
           </div>
           <div className="hidden md:flex items-center gap-6 font-mono text-[10px] text-muted tracking-widest uppercase">
-            <span className="flex items-center gap-2"><span className="text-primary">●</span> NEXT_COHORT: MAY_2026</span>
-            <span className="flex items-center gap-2"><span className="text-primary">●</span> LIMITED_SPOTS</span>
+            <span className="flex items-center gap-2"><span className="text-primary">●</span> PRÓXIMA_COHORTE: MAYO_2026</span>
+            <span className="flex items-center gap-2"><span className="text-primary">●</span> CUPOS_LIMITADOS</span>
           </div>
         </div>
         <nav className="flex items-center gap-4">
           <div className="hidden lg:flex items-center gap-8 font-mono text-xs tracking-tighter uppercase">
-            <a className="hover:text-primary transition-colors" href="#curriculum">CURRICULUM</a>
-            <a className="hover:text-primary transition-colors" href="#stack">TECH_STACK</a>
+            <a className="hover:text-primary transition-colors" href="#curriculum">PROGRAMA</a>
+            <a className="hover:text-primary transition-colors" href="#stack">TECNOLOGÍAS</a>
             <a className="hover:text-primary transition-colors" href="#instructor">INSTRUCTOR</a>
           </div>
           <a href={APPLY_URL} className="hidden sm:block bg-primary text-white font-mono text-xs font-bold px-6 py-2 hover:brightness-110 transition-all cursor-pointer">
-            APPLY NOW_
+            INSCRÍBETE_
           </a>
           <button
             className="lg:hidden flex flex-col items-center justify-center gap-1.5 p-2 cursor-pointer"
             onClick={() => setMenuOpen(!menuOpen)}
-            aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-label={menuOpen ? "Cerrar menú de navegación" : "Abrir menú de navegación"}
             aria-expanded={menuOpen}
           >
             <span className={`block w-5 h-0.5 bg-white transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
@@ -57,12 +57,12 @@ const Header = () => {
             className="lg:hidden overflow-hidden border-t border-grid-line bg-background-dark/95 backdrop-blur-md"
           >
             <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col gap-4">
-              <a className="font-mono text-sm tracking-tighter uppercase hover:text-primary transition-colors py-2" href="#curriculum" onClick={() => setMenuOpen(false)}>CURRICULUM</a>
-              <a className="font-mono text-sm tracking-tighter uppercase hover:text-primary transition-colors py-2" href="#stack" onClick={() => setMenuOpen(false)}>TECH_STACK</a>
+              <a className="font-mono text-sm tracking-tighter uppercase hover:text-primary transition-colors py-2" href="#curriculum" onClick={() => setMenuOpen(false)}>PROGRAMA</a>
+              <a className="font-mono text-sm tracking-tighter uppercase hover:text-primary transition-colors py-2" href="#stack" onClick={() => setMenuOpen(false)}>TECNOLOGÍAS</a>
               <a className="font-mono text-sm tracking-tighter uppercase hover:text-primary transition-colors py-2" href="#instructor" onClick={() => setMenuOpen(false)}>INSTRUCTOR</a>
               <div className="border-t border-grid-line pt-4 flex flex-col gap-3">
-                <a href={APPLY_URL} className="bg-primary text-white font-mono text-xs font-bold px-6 py-3 text-center hover:brightness-110 transition-all uppercase">APPLY NOW_</a>
-                <a href={WAITLIST_URL} className="border border-grid-line text-white font-mono text-xs font-bold px-6 py-3 text-center hover:bg-surface transition-colors uppercase">JOIN WAITLIST</a>
+                <a href={APPLY_URL} className="bg-primary text-white font-mono text-xs font-bold px-6 py-3 text-center hover:brightness-110 transition-all uppercase">INSCRÍBETE_</a>
+                <a href={WAITLIST_URL} className="border border-grid-line text-white font-mono text-xs font-bold px-6 py-3 text-center hover:bg-surface transition-colors uppercase">LISTA DE ESPERA</a>
               </div>
             </div>
           </motion.div>
