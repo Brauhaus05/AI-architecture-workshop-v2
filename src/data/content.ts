@@ -33,7 +33,7 @@ export const curriculumModules: CurriculumModule[] = [
 export const galleryFilters = ["ALL_GENS", "MIDJOURNEY", "KLING_3", "VEO_3", "FLUX.1", "RUNWAY"];
 
 export const galleryImages: GalleryImage[] = [
-  { src: "/images/gallery-01.jpg", aspect: "aspect-[4/5]", id: "#8472", engine: "FLUX.1", meta1: "ITER: 150", filter: "FLUX.1", alt: "Luxury modern villa exterior with dramatic lighting and landscaped pool area" },
+  { src: "/images/gallery-05.jpg", aspect: "aspect-[4/5]", id: "#8472", engine: "FLUX.1", meta1: "ITER: 150", filter: "FLUX.1", alt: "Luxury modern villa exterior with dramatic lighting and landscaped pool area" },
   { src: "/images/gallery-02.jpg", aspect: "aspect-[3/4]", id: "#2293", engine: "SAMP_METHOD: EULER_A", meta1: "CFG: 7.5", filter: "MIDJOURNEY", alt: "Warm-toned architectural interior with natural wood and ambient lighting" },
   { src: "/images/gallery-03.jpg", aspect: "aspect-[1/1]", id: "#9104", engine: "LATENT_SPACE: V4_HQ", meta1: "SEED: 88291", filter: "VEO_3", alt: "Brutalist concrete structure with angular geometry set against a misty forest" },
   { src: "/images/gallery-04.jpg", aspect: "aspect-[16/9]", id: "#4052", engine: "GEN_ENGINE: FLUX.PRO", meta1: "POS: TOP_VIEW", filter: "FLUX.1", alt: "Aerial view of a contemporary campus with green rooftops and courtyards" },
