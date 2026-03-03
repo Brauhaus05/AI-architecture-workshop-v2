@@ -19,6 +19,7 @@
   --radius-full: 9999px;
 
   --animate-marquee: marquee 40s linear infinite;
+  --animate-marquee-will-change: transform;
 
   @keyframes marquee {
     0% { transform: translateX(0); }
